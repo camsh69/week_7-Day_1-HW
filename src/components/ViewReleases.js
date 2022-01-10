@@ -1,10 +1,22 @@
 import React from "react";
+import Releases from './Releases'
 
-const ViewReleases = () => {
-    return(
-        <h2>Releases will appear here</h2>
-    )
+const ViewReleases = ({links}) => {
 
-}
+    const releaseNodes = links.map(link => {
+        return (
+                <Releases url={link.url} name={link.name}></Releases>
+        )
+    })
+        
+   return (
+       <>
+           <ul>
+           {releaseNodes}
+           </ul>
+       </>
+       
+   )        
+    }
 
 export default ViewReleases;

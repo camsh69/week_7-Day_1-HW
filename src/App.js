@@ -3,7 +3,10 @@ import ReleasesBox from './containers/ReleasesBox';
 
 function App() {
   return (
-    <ReleasesBox/>
+    <section>
+      <ReleasesBox/>
+    </section>
+    
   );
 }
 

@@ -1,8 +1,13 @@
 import React from "react";
 
-const ViewMoreLink = () => {
+const ViewMoreLink = ({viewMoreLink}) => {
     return (
-        <p>Link will appear here</p>
+        <>
+        <div id = "viewMoreLink">
+        <a href={viewMoreLink}>View more upcoming releases &gt; &gt;</a>
+        </div>
+        </>
+            
     )
 }
 
