@@ -5,7 +5,7 @@ const ViewReleases = ({links}) => {
 
     const releaseNodes = links.map(link => {
         return (
-                <Releases url={link.url} name={link.name}></Releases>
+                <Releases url={link.url}>{link.name}</Releases>
         )
     })
         

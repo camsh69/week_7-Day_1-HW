@@ -1,10 +1,10 @@
 import React from "react";
 
-const Releases = ({url, name}) => {
+const Releases = ({url, children}) => {
     return (
         <>
             <li>
-                <a href={url}>{name}</a>
+                <a href={url}>{children}</a>
             </li>
             <p></p>
         </>
